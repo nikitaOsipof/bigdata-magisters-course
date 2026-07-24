@@ -1,3 +1,4 @@
+# Практика 7: Оркестрация DataOps пайплайнов в Prefect
 from prefect import task, flow
 import polars as pl
 
@@ -8,6 +9,7 @@ def extract():
 @task
 def validate_quality(df):
     # --- СТУДЕНТ ДОЛЖЕН НАПИСАТЬ КОД НИЖЕ ---
+    # Если в колонке 'metric' есть пропуски (null), вызовите исключение ValueError
     return df
 
 @flow(name="academic_pipeline")

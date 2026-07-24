@@ -1,3 +1,4 @@
+# Практика 8: Готовая рабочая визуализация в Streamlit
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt

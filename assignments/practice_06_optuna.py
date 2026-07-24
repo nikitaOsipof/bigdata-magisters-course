@@ -1,3 +1,4 @@
+# Практика 6: Байесовская оптимизация параметров в Optuna
 import optuna
 
 def heavy_academic_function(x: float, y: float) -> float: # Добавлены типы float
@@ -5,6 +6,7 @@ def heavy_academic_function(x: float, y: float) -> float: # Добавлены �
 
 # Обязательно указываем тип trial: optuna.Trial и возвращаемое значение -> float
 def objective(trial: optuna.Trial) -> float: 
+    # Настройте непрерывное пространство поиска float для x и y от -10 до 10.
     x: float = 0.0 
     y: float = 0.0
     return heavy_academic_function(x, y)
